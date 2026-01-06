@@ -43,7 +43,7 @@ class CustomerController extends Controller
 
         $customer->update($validated);
 
-        return response()->json($customer, 202);
+        return response()->json($customer, 200);
     }
 
     public function destroy(Customer $customer): JsonResponse
